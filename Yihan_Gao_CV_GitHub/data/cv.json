@@ -1,61 +1,424 @@
 {
   "updated": "2026-11-03",
-  "name": {"en": "Yihan Gao", "zh": "高一涵"},
-  "position": {"en": "Ph.D. Candidate in Transportation", "zh": "交通运输方向博士研究生"},
-  "department": {"en": "Department of Aeronautical and Aviation Engineering", "zh": "航空及民航工程学系"},
-  "institution": {"en": "The Hong Kong Polytechnic University", "zh": "香港理工大学"},
+  "name": {
+    "en": "Yihan Gao",
+    "zh": "高一涵"
+  },
+  "position": {
+    "en": "Ph.D. Candidate in Transportation",
+    "zh": "交通运输方向博士研究生"
+  },
+  "department": {
+    "en": "Department of Aeronautical and Aviation Engineering",
+    "zh": "航空及民航工程学系"
+  },
+  "institution": {
+    "en": "The Hong Kong Polytechnic University",
+    "zh": "香港理工大学"
+  },
   "email": "yi-han.gao@connect.polyu.hk",
   "homepage": "https://gaoyihan97.github.io/GaoYihan2024.github.io/",
   "scholar": "https://scholar.google.com/citations?user=qAM6vgQAAAAJ",
   "orcid": "https://orcid.org/0000-0001-6197-5416",
   "education": [
-    {"institution": {"en": "The Hong Kong Polytechnic University", "zh": "香港理工大学"}, "location": {"en": "Hong Kong, China", "zh": "中国香港"}, "degree": {"en": "Ph.D. in Transportation", "zh": "博士研究生，交通运输方向"}, "dates": {"en": "Sep 2023 - Aug 2027 (expected)", "zh": "2023.09 - 2027.08（预计）"}, "detail": {"en": "Department of Aeronautical and Aviation Engineering; Supervisor: Prof. Wei Liu", "zh": "航空及民航工程学系；导师：刘伟教授"}},
-    {"institution": {"en": "Central South University", "zh": "中南大学"}, "location": {"en": "Changsha, China", "zh": "中国长沙"}, "degree": {"en": "Master's Degree", "zh": "硕士"}, "dates": {"en": "Sep 2019 - Jun 2022", "zh": "2019.09 - 2022.06"}, "detail": {"en": "School of Traffic & Transportation Engineering", "zh": "交通运输工程学院"}},
-    {"institution": {"en": "Central South University", "zh": "中南大学"}, "location": {"en": "Changsha, China", "zh": "中国长沙"}, "degree": {"en": "Bachelor's Degree", "zh": "学士"}, "dates": {"en": "Sep 2015 - Jun 2019", "zh": "2015.09 - 2019.06"}, "detail": {"en": "School of Traffic & Transportation Engineering", "zh": "交通运输工程学院"}}
+    {
+      "institution": {
+        "en": "The Hong Kong Polytechnic University",
+        "zh": "香港理工大学"
+      },
+      "location": {
+        "en": "Hong Kong, China",
+        "zh": "中国香港"
+      },
+      "degree": {
+        "en": "Ph.D. in Transportation",
+        "zh": "博士研究生，交通运输方向"
+      },
+      "dates": {
+        "en": "Sep 2023 - Aug 2027 (expected)",
+        "zh": "2023.09 - 2027.08（预计）"
+      },
+      "detail": {
+        "en": "Department of Aeronautical and Aviation Engineering; Supervisor: Prof. Wei Liu",
+        "zh": "航空及民航工程学系；导师：刘伟教授"
+      }
+    },
+    {
+      "institution": {
+        "en": "Central South University",
+        "zh": "中南大学"
+      },
+      "location": {
+        "en": "Changsha, China",
+        "zh": "中国长沙"
+      },
+      "degree": {
+        "en": "Master's Degree",
+        "zh": "硕士"
+      },
+      "dates": {
+        "en": "Sep 2019 - Jun 2022",
+        "zh": "2019.09 - 2022.06"
+      },
+      "detail": {
+        "en": "School of Traffic & Transportation Engineering",
+        "zh": "交通运输工程学院"
+      }
+    },
+    {
+      "institution": {
+        "en": "Central South University",
+        "zh": "中南大学"
+      },
+      "location": {
+        "en": "Changsha, China",
+        "zh": "中国长沙"
+      },
+      "degree": {
+        "en": "Bachelor's Degree",
+        "zh": "学士"
+      },
+      "dates": {
+        "en": "Sep 2015 - Jun 2019",
+        "zh": "2015.09 - 2019.06"
+      },
+      "detail": {
+        "en": "School of Traffic & Transportation Engineering",
+        "zh": "交通运输工程学院"
+      }
+    }
   ],
   "experience": [
-    {"institution": {"en": "The Hong Kong Polytechnic University", "zh": "香港理工大学"}, "role": {"en": "Research Assistant", "zh": "研究助理"}, "dates": {"en": "Dec 2022 - Aug 2023", "zh": "2022.12 - 2023.08"}, "detail": {"en": "Department of Aeronautical and Aviation Engineering", "zh": "航空及民航工程学系"}},
-    {"institution": {"en": "The Hong Kong Polytechnic University", "zh": "香港理工大学"}, "role": {"en": "Visiting Student", "zh": "访问学生"}, "dates": {"en": "Jan 2022 - Apr 2022", "zh": "2022.01 - 2022.04"}, "detail": {"en": "Department of Aeronautical and Aviation Engineering", "zh": "航空及民航工程学系"}}
+    {
+      "institution": {
+        "en": "The Hong Kong Polytechnic University",
+        "zh": "香港理工大学"
+      },
+      "role": {
+        "en": "Research Assistant",
+        "zh": "研究助理"
+      },
+      "dates": {
+        "en": "Dec 2022 - Aug 2023",
+        "zh": "2022.12 - 2023.08"
+      },
+      "detail": {
+        "en": "Department of Aeronautical and Aviation Engineering",
+        "zh": "航空及民航工程学系"
+      }
+    },
+    {
+      "institution": {
+        "en": "The Hong Kong Polytechnic University",
+        "zh": "香港理工大学"
+      },
+      "role": {
+        "en": "Visiting Student",
+        "zh": "访问学生"
+      },
+      "dates": {
+        "en": "Jan 2022 - Apr 2022",
+        "zh": "2022.01 - 2022.04"
+      },
+      "detail": {
+        "en": "Department of Aeronautical and Aviation Engineering",
+        "zh": "航空及民航工程学系"
+      }
+    }
   ],
   "research": {
-    "methods": {"en": ["Transport network modeling and optimization", "Equilibrium analysis and pricing", "Robust optimization under uncertainty"], "zh": ["交通网络建模与优化", "均衡分析与定价", "不确定性下的鲁棒优化"]},
-    "applications": {"en": ["Electric bus fleets and charging infrastructure", "Shared parking, charging and vehicle-to-grid services", "Railway seat allocation and service planning"], "zh": ["电动巴士车队与充电基础设施", "停车、充电与车网互动共享服务", "铁路票额分配与运输服务规划"]}
+    "topics": {
+      "en": [
+        "Electrified Transportation",
+        "Transport Dynamics",
+        "Railway Systems"
+      ],
+      "zh": [
+        "交通电动化",
+        "交通动力学",
+        "铁路系统"
+      ]
+    }
   },
   "journal_publications": [
-    {"authors": "Gao, Y., and Liu, W.", "year": "2026", "title": "Robust planning for bus fleet electrification and charging facility deployment", "venue": "Transportation Research Part E: Logistics and Transportation Review", "details": "213, 104970", "url": "https://www.sciencedirect.com/science/article/pii/S1366554526003091"},
-    {"authors": "Zhang, Z., Gao, Y., Zhang, F., and Liu, W.", "year": "2026", "title": "Parking management and operation: A bibliometric analysis and comprehensive review", "venue": "Transport Economics and Management", "details": "4, 14-37", "url": "https://www.sciencedirect.com/science/article/pii/S2949899625000346"},
-    {"authors": "Xu, J., Deng, L., Gao, Y., and Liu, W.", "year": "2026", "title": "Joint optimization of pricing, seat allocation and overbooking for high-speed railway system under demand uncertainty", "venue": "Transportation Research Part C: Emerging Technologies", "details": "183, 105492", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0968090X25004966"},
-    {"authors": "Gao, Y., Liu, W., Zhang, Z., and Du, B.", "year": "2025", "title": "Managing parking and charging services for electric autonomous vehicles considering vehicle-to-grid facilities", "venue": "Transportation Research Part A: Policy and Practice", "details": "201, 104680", "url": "https://www.sciencedirect.com/science/article/pii/S0965856425003118"},
-    {"authors": "Xu, G., Zhou, P., Liu, W., and Gao, Y.", "year": "2025", "title": "Seat allocation optimization for railway systems with equity considerations", "venue": "Transportmetrica B: Transport Dynamics", "details": "Article 2448707", "url": "https://doi.org/10.1080/21680566.2024.2448707"},
-    {"authors": "Xu, G., Liu, Y., Gao, Y., and Liu, W.", "year": "2023", "title": "Integrated optimization of train stopping plan and seat allocation scheme for railway systems under equilibrium travel choice and elastic demand", "venue": "Transportation Research Part E: Logistics and Transportation Review", "details": "177, 103231", "url": "https://www.sciencedirect.com/science/article/pii/S1366554523002193"},
-    {"authors": "Xu, G., Gao, Y., and Liu, W.", "year": "2023", "title": "Pareto-improving seat allocation for high-speed railway networks with equilibrium flows", "venue": "Transportation Research Part C: Emerging Technologies", "details": "154, 104261", "url": "https://www.sciencedirect.com/science/article/pii/S0968090X23002504"},
-    {"authors": "Gao, Y., Yang, W., and Xu, G.", "authors_zh": "高一涵，杨婉钰，徐光明", "year": "2022", "title": "An Optimization Method for Railway of Multi-train Seat allocation Problem with Cancellation and Refund Policy", "title_zh": "考虑退票情形的铁路多列车票额分配优化方法", "venue": "Journal of Railway Science and Engineering", "venue_zh": "铁道科学与工程学报", "details": "19(3), 634-641", "language": "Chinese", "url": "https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=CSTD202203007"}
+    {
+      "authors": "Gao, Y., and Liu, W.",
+      "year": "2026",
+      "title": "Robust planning for bus fleet electrification and charging facility deployment",
+      "venue": "Transportation Research Part E: Logistics and Transportation Review",
+      "details": "213, 104970",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1366554526003091"
+    },
+    {
+      "authors": "Zhang, Z., Gao, Y., Zhang, F., and Liu, W.",
+      "year": "2026",
+      "title": "Parking management and operation: A bibliometric analysis and comprehensive review",
+      "venue": "Transport Economics and Management",
+      "details": "4, 14-37",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949899625000346"
+    },
+    {
+      "authors": "Xu, J., Deng, L., Gao, Y., and Liu, W.",
+      "year": "2026",
+      "title": "Joint optimization of pricing, seat allocation and overbooking for high-speed railway system under demand uncertainty",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "details": "183, 105492",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0968090X25004966"
+    },
+    {
+      "authors": "Gao, Y., Liu, W., Zhang, Z., and Du, B.",
+      "year": "2025",
+      "title": "Managing parking and charging services for electric autonomous vehicles considering vehicle-to-grid facilities",
+      "venue": "Transportation Research Part A: Policy and Practice",
+      "details": "201, 104680",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0965856425003118"
+    },
+    {
+      "authors": "Xu, G., Zhou, P., Liu, W., and Gao, Y.",
+      "year": "2025",
+      "title": "Seat allocation optimization for railway systems with equity considerations",
+      "venue": "Transportmetrica B: Transport Dynamics",
+      "details": "Article 2448707",
+      "url": "https://doi.org/10.1080/21680566.2024.2448707"
+    },
+    {
+      "authors": "Xu, G., Liu, Y., Gao, Y., and Liu, W.",
+      "year": "2023",
+      "title": "Integrated optimization of train stopping plan and seat allocation scheme for railway systems under equilibrium travel choice and elastic demand",
+      "venue": "Transportation Research Part E: Logistics and Transportation Review",
+      "details": "177, 103231",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1366554523002193"
+    },
+    {
+      "authors": "Xu, G., Gao, Y., and Liu, W.",
+      "year": "2023",
+      "title": "Pareto-improving seat allocation for high-speed railway networks with equilibrium flows",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "details": "154, 104261",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0968090X23002504"
+    },
+    {
+      "authors": "Gao, Y., Yang, W., and Xu, G.",
+      "authors_zh": "高一涵，杨婉钰，徐光明",
+      "year": "2022",
+      "title": "An Optimization Method for Railway of Multi-train Seat allocation Problem with Cancellation and Refund Policy",
+      "title_zh": "考虑退票情形的铁路多列车票额分配优化方法",
+      "venue": "Journal of Railway Science and Engineering",
+      "venue_zh": "铁道科学与工程学报",
+      "details": "19(3), 634-641",
+      "language": "Chinese",
+      "url": "https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=CSTD202203007"
+    }
   ],
   "chapters": [
-    {"authors": "Liu, W., Wu, R., Xu, G., and Gao, Y.", "year": "2025", "title": "A double time-scale passenger assignment model", "venue": "Encyclopedia in Operations Management", "details": "Vol. 2, pp. 224-237", "url": "https://www.sciencedirect.com/science/chapter/referencework/abs/pii/B9780443289934002158"}
+    {
+      "authors": "Liu, W., Wu, R., Xu, G., and Gao, Y.",
+      "year": "2025",
+      "title": "A double time-scale passenger assignment model",
+      "venue": "Encyclopedia in Operations Management",
+      "details": "Vol. 2, pp. 224-237",
+      "url": "https://www.sciencedirect.com/science/chapter/referencework/abs/pii/B9780443289934002158"
+    }
   ],
   "working_papers": [
-    {"authors": "Gao, Y., and Liu, W.", "year": "2026", "title": "On the shared bus charging system with public access", "venue": "", "details": "", "status": {"en": "Submitted to Transportation Science", "zh": "已投稿至 Transportation Science"}}
+    {
+      "authors": "Gao, Y., and Liu, W.",
+      "year": "2026",
+      "title": "On the shared bus charging system with public access",
+      "venue": "",
+      "details": "",
+      "status": {
+        "en": "Submitted",
+        "zh": "已投稿"
+      }
+    }
   ],
   "teaching": [
-    {"code": "AAE3009", "title": {"en": "Operations Research and Computational Analytics in Air Transport Operations", "zh": "航空运输运营中的运筹学与计算分析"}, "dates": {"en": "Fall 2023, 2024, 2025 and 2026", "zh": "2023、2024、2025、2026 年秋季"}, "role": {"en": "Teaching Assistant (tutorials)", "zh": "助教（习题课）"}},
-    {"code": "AAE5102", "title": {"en": "Operations Research, Resource Planning and Engineering Management in Aviation", "zh": "航空运筹学、资源规划与工程管理"}, "dates": {"en": "2024, Semester 1", "zh": "2024 年，第一学期"}, "role": {"en": "Teaching Assistant", "zh": "助教"}},
-    {"code": "AAE6106", "title": {"en": "Networked Transportation and Air Traffic Systems", "zh": "网络化交通与空中交通系统"}, "dates": {"en": "2024, Semester 2", "zh": "2024 年，第二学期"}, "role": {"en": "Teaching Assistant", "zh": "助教"}},
-    {"code": "AAE3010", "title": {"en": "Airline Operations", "zh": "航空公司运营"}, "dates": {"en": "2023, Semester 2", "zh": "2023 年，第二学期"}, "role": {"en": "Teaching Assistant", "zh": "助教"}}
+    {
+      "code": "AAE3009",
+      "title": {
+        "en": "Operations Research and Computational Analytics in Air Transport Operations",
+        "zh": "航空运输运营中的运筹学与计算分析"
+      },
+      "dates": {
+        "en": "Fall 2023, 2024; Fall 2025, 2026 (tutorials)",
+        "zh": "2023、2024 年秋季；2025、2026 年秋季（习题课）"
+      },
+      "role": {
+        "en": "Teaching Assistant",
+        "zh": "助教"
+      }
+    },
+    {
+      "code": "AAE5102",
+      "title": {
+        "en": "Operations Research, Resource Planning and Engineering Management in Aviation",
+        "zh": "航空运筹学、资源规划与工程管理"
+      },
+      "dates": {
+        "en": "2024, Semester 1",
+        "zh": "2024 年，第一学期"
+      },
+      "role": {
+        "en": "Teaching Assistant",
+        "zh": "助教"
+      }
+    },
+    {
+      "code": "AAE6106",
+      "title": {
+        "en": "Networked Transportation and Air Traffic Systems",
+        "zh": "网络化交通与空中交通系统"
+      },
+      "dates": {
+        "en": "2024, Semester 2",
+        "zh": "2024 年，第二学期"
+      },
+      "role": {
+        "en": "Teaching Assistant",
+        "zh": "助教"
+      }
+    },
+    {
+      "code": "AAE3010",
+      "title": {
+        "en": "Airline Operations",
+        "zh": "航空公司运营"
+      },
+      "dates": {
+        "en": "2023, Semester 2",
+        "zh": "2023 年，第二学期"
+      },
+      "role": {
+        "en": "Teaching Assistant",
+        "zh": "助教"
+      }
+    }
   ],
   "presentations": [
-    {"title": "Robust planning of bus fleet electrification and charging facility deployment", "event": {"en": "12th Triennial Symposium on Transportation Analysis (TRISTAN XII)", "zh": "第十二届交通运输分析三年一度国际研讨会（TRISTAN XII）"}, "dates": {"en": "Jun 22-27, 2025", "zh": "2025.06.22-27"}, "location": {"en": "Okinawa, Japan", "zh": "日本冲绳"}, "url": "https://tristan2025.org/proceedings/TRISTAN2025_ExtendedAbstract_130.pdf"},
-    {"title": "Optimizing parking and charging services for electric autonomous vehicles considering vehicle-to-grid facilities", "event": {"en": "World Transport Convention (WTC 2024)", "zh": "2024 世界交通运输大会（WTC 2024）"}, "dates": {"en": "Jun 26-29, 2024", "zh": "2024.06.26-29"}, "location": {"en": "Qingdao, China", "zh": "中国青岛"}},
-    {"title": "Joint optimization of vehicle-to-grid facilities and parking and charging services in the era of electric autonomous vehicles", "event": {"en": "27th International Conference of Hong Kong Society for Transportation Studies (HKSTS 2023)", "zh": "第二十七届香港交通研究学会国际会议（HKSTS 2023）"}, "dates": {"en": "2023", "zh": "2023 年"}, "location": {"en": "Hong Kong, China", "zh": "中国香港"}},
-    {"title": "Integrated optimization of train stop planning and seat allocation for railway systems under equilibrium travel choice and elastic demand", "event": {"en": "4th International Symposium on Multimodal Transportation", "zh": "第四届多模式交通运输国际研讨会"}, "dates": {"en": "2021", "zh": "2021 年"}, "location": {"en": "Nanjing, China", "zh": "中国南京"}}
+    {
+      "title": "Robust planning of bus fleet electrification and charging facility deployment",
+      "event": {
+        "en": "12th Triennial Symposium on Transportation Analysis (TRISTAN XII)",
+        "zh": "第十二届交通运输分析三年一度国际研讨会（TRISTAN XII）"
+      },
+      "dates": {
+        "en": "Jun 22-27, 2025",
+        "zh": "2025.06.22-27"
+      },
+      "location": {
+        "en": "Okinawa, Japan",
+        "zh": "日本冲绳"
+      },
+      "url": "https://tristan2025.org/proceedings/TRISTAN2025_ExtendedAbstract_130.pdf"
+    },
+    {
+      "title": "Optimizing parking and charging services for electric autonomous vehicles considering vehicle-to-grid facilities",
+      "event": {
+        "en": "World Transport Convention (WTC 2024)",
+        "zh": "2024 世界交通运输大会（WTC 2024）"
+      },
+      "dates": {
+        "en": "Jun 26-29, 2024",
+        "zh": "2024.06.26-29"
+      },
+      "location": {
+        "en": "Qingdao, China",
+        "zh": "中国青岛"
+      }
+    },
+    {
+      "title": "Joint optimization of vehicle-to-grid facilities and parking and charging services in the era of electric autonomous vehicles",
+      "event": {
+        "en": "27th International Conference of Hong Kong Society for Transportation Studies (HKSTS 2023)",
+        "zh": "第二十七届香港交通研究学会国际会议（HKSTS 2023）"
+      },
+      "dates": {
+        "en": "2023",
+        "zh": "2023 年"
+      },
+      "location": {
+        "en": "Hong Kong, China",
+        "zh": "中国香港"
+      }
+    },
+    {
+      "title": "Integrated optimization of train stop planning and seat allocation for railway systems under equilibrium travel choice and elastic demand",
+      "event": {
+        "en": "4th International Symposium on Multimodal Transportation",
+        "zh": "第四届多模式交通运输国际研讨会"
+      },
+      "dates": {
+        "en": "2021",
+        "zh": "2021 年"
+      },
+      "location": {
+        "en": "Nanjing, China",
+        "zh": "中国南京"
+      }
+    }
   ],
   "projects": [
-    {"title": {"en": "Integrated planning and management of electric vehicle travel, parking, charging and vehicle-to-grid services", "zh": "电动车出行、停车、充电以及反向输电的综合规划与管理"}, "funder": {"en": "General Program, Natural Science Foundation of Guangdong Province", "zh": "广东省自然科学基金面上项目"}, "dates": "2023-2025", "role": {"en": "Participant", "zh": "参与"}},
-    {"title": {"en": "Joint optimization of seat allocation and differentiated ticket pricing for high-speed railway networks with time-varying demand", "zh": "面向时变需求的高速铁路网络票额分配和差异化定价综合优化"}, "funder": {"en": "National Natural Science Foundation of China, No. 72171236", "zh": "国家自然科学基金面上项目，72171236"}, "dates": "2022.01-2025.12", "role": {"en": "Participant", "zh": "参与"}},
-    {"title": {"en": "Seat allocation optimization for high-speed railway networks with elastic time-varying demand", "zh": "基于弹性时变需求的高速铁路网络票额优化方法"}, "funder": {"en": "Postgraduate Research and Innovation Project, Central South University, No. 1053320192457", "zh": "中南大学研究生科研创新项目，1053320192457"}, "dates": "2020.09-2022.03", "role": {"en": "Project Lead", "zh": "项目负责人"}}
+    {
+      "title": {
+        "en": "Integrated planning and management of electric vehicle travel, parking, charging and vehicle-to-grid services",
+        "zh": "电动车出行、停车、充电以及反向输电的综合规划与管理"
+      },
+      "funder": {
+        "en": "General Program, Natural Science Foundation of Guangdong Province",
+        "zh": "广东省自然科学基金面上项目"
+      },
+      "dates": "2023-2025",
+      "role": {
+        "en": "Participant",
+        "zh": "参与"
+      }
+    },
+    {
+      "title": {
+        "en": "Joint optimization of seat allocation and differentiated ticket pricing for high-speed railway networks with time-varying demand",
+        "zh": "面向时变需求的高速铁路网络票额分配和差异化定价综合优化"
+      },
+      "funder": {
+        "en": "National Natural Science Foundation of China, No. 72171236",
+        "zh": "国家自然科学基金面上项目，72171236"
+      },
+      "dates": "2022.01-2025.12",
+      "role": {
+        "en": "Participant",
+        "zh": "参与"
+      }
+    },
+    {
+      "title": {
+        "en": "Seat allocation optimization for high-speed railway networks with elastic time-varying demand",
+        "zh": "基于弹性时变需求的高速铁路网络票额优化方法"
+      },
+      "funder": {
+        "en": "Postgraduate Research and Innovation Project, Central South University, No. 1053320192457",
+        "zh": "中南大学研究生科研创新项目，1053320192457"
+      },
+      "dates": "2020.09-2022.03",
+      "role": {
+        "en": "Project Lead",
+        "zh": "项目负责人"
+      }
+    }
   ],
   "awards": [
-    {"title": {"en": "Commendation Award, Arup Research Competition", "zh": "Arup Research Competition 嘉许奖"}, "year": "2025"},
-    {"title": {"en": "Second Prize, 17th China Postgraduate Mathematical Contest in Modeling (Huawei Cup)", "zh": "第十七届“华为杯”中国研究生数学建模竞赛二等奖"}, "year": "2020"}
+    {
+      "title": {
+        "en": "Commendation Award, Arup Research Competition",
+        "zh": "Arup Research Competition 嘉许奖"
+      },
+      "year": "2025"
+    },
+    {
+      "title": {
+        "en": "Second Prize, 17th China Postgraduate Mathematical Contest in Modeling (Huawei Cup)",
+        "zh": "第十七届“华为杯”中国研究生数学建模竞赛二等奖"
+      },
+      "year": "2020"
+    }
   ]
 }
