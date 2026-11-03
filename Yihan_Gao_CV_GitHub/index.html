@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="keywords" content="Yihan Gao, Transportation, PolyU, CSU, Electrified and Automated Transportation">
+  <meta name="author" content="Yihan Gao">
+  <meta name="description" content="Yihan Gao's academic homepage — Ph.D. candidate in Transportation at The Hong Kong Polytechnic University, specializing in transport network modeling, electrified & automated transportation, and railway systems.">
+  <title>Yihan Gao | Transportation Researcher</title>
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f8fafc;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+      color: #1e2a3e;
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+
+    /* modern container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* card / subtle separation */
+    section, header, footer {
+      max-width: 100%;
+    }
+
+    /* typography scale */
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #1e2a3e 0%, #2c4c6e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 0.4rem;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      border-left: 5px solid #2c7da0;
+      padding-left: 1rem;
+      margin: 1.8rem 0 1.2rem 0;
+      color: #0f2b3d;
+    }
+
+    /* first h2 (about) reduce top margin */
+    section:first-of-type h2 {
+      margin-top: 0.5rem;
+    }
+
+    a {
+      color: #2c7da0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: #1a5a7a;
+      border-bottom-color: #2c7da0;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* header area */
+    .header-content {
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      font-weight: 450;
+      color: #2c5a74;
+      margin: 0.25rem 0 0.6rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    /* contact info - now a single row */
+    .contact-info {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 1.5rem;
+      background: #eef2f6;
+      padding: 0.6rem 1.2rem;
+      border-radius: 60px;
+      width: fit-content;
+      margin-top: 0.7rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+    }
+
+    .email-link {
+      color: #1e4660;
+      font-weight: 500;
+      border-bottom: none;
+      cursor: pointer;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .email-link:hover {
+      color: #0a5c7e;
+      border-bottom: none;
+      text-decoration: underline;
+    }
+
+    .envelope-icon {
+      font-size: 1rem;
+      color: #1e4660;
+      line-height: 1;
+      display: inline-block;
+    }
+
+    /* cards for sections (soft background) */
+    .card-section {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 0.2rem 1.8rem 1.8rem 1.8rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: box-shadow 0.2s;
+    }
+
+    .card-section:hover {
+      box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* lists refinement */
+    ul, ol {
+      padding-left: 1.5rem;
+      margin: 0.8rem 0;
+    }
+
+    li {
+      margin: 0.65rem 0;
+    }
+
+    /* publication items: more readable */
+    .pub-list li, .conf-list li {
+      margin-bottom: 1rem;
+    }
+
+    /* related links row */
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      align-items: center;
+      justify-content: flex-start;
+      background: #ffffff;
+      padding: 1rem 1.8rem;
+      border-radius: 60px;
+      width: fit-content;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .link-row a {
+      font-weight: 500;
+      font-size: 1rem;
+      border-bottom: none;
+      background: #f0f4f9;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      transition: all 0.2s;
+    }
+
+    .link-row a:hover {
+      background: #e2e8f0;
+      color: #1f506e;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #5f6c7a;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .container {
+        padding: 1.5rem 1.2rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 1rem 0;
+      }
+      .card-section {
+        padding: 0.2rem 1.2rem 1.2rem 1.2rem;
+      }
+      .contact-info {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        border-radius: 28px;
+      }
+      .contact-item {
+        white-space: normal;
+      }
+      .link-row {
+        border-radius: 32px;
+        padding: 0.8rem 1.2rem;
+        gap: 0.8rem;
+      }
+    }
+
+    /* custom bullet for lists – simple dot */
+    .list-icon {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .list-icon li {
+      position: relative;
+      padding-left: 1.4rem;
+    }
+    .list-icon li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2c7da0;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    /* publication numbers styling */
+    ol li::marker {
+      color: #2c7da0;
+      font-weight: 500;
+    }
+
+    .intro-text {
+      font-size: 1.05rem;
+      margin: 1rem 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="header-content">
+      <h1>Yihan Gao</h1>
+      <div class="tagline">
+        <span>Ph.D. Candidate in Transportation</span>
+        <span>The Hong Kong Polytechnic University</span>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="mailto:yi-han.gao@connect.polyu.hk" class="email-link">
+            <span class="envelope-icon">✉️</span> Email
+          </a>
+        </div>
+        <div class="contact-item">AAE, PolyU</div>
+        <div class="contact-item"><a href="cv/">CV (English)</a></div>
+        <div class="contact-item"><a href="cv/zh.html">中文简历</a></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Me section -->
+    <section id="about" class="card-section">
+      <h2>About Me</h2>
+      <div class="intro-text">
+        <p>I am currently a Ph.D. candidate in Transportation (supervised by Prof. Wei Liu) at <a href="https://www.polyu.edu.hk/en/aae/" target="_blank" rel="noopener">the Department of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University</a>. My research focuses on modeling electrified and automated transportation, and transport dynamics.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card-section">
+      <h2>Education</h2>
+      <ul class="list-icon">
+        <li>Sep. 2023 – Present, Ph.D. student, The Hong Kong Polytechnic University</li>
+        <li>Sep. 2019 – Jun. 2022, Master, Central South University</li>
+        <li>Jan. 2022 – Apr. 2022, Visiting student, The Hong Kong Polytechnic University</li>
+        <li>Sep. 2015 – Jun. 2019, Bachelor, Central South University</li>
+      </ul>
+    </section>
+
+    <!-- Work Experience (formerly Experiences) -->
+    <section id="work-experience" class="card-section">
+      <h2>Work Experience</h2>
+      <ul class="list-icon">
+        <li>Dec. 2022 – Aug. 2023, Research Assistant, The Hong Kong Polytechnic University</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="card-section">
+      <h2>Publications</h2>
+      <ol class="pub-list">
+        <li><b>Gao, Y.,</b> Liu, W. (2026). <a href="https://www.sciencedirect.com/science/article/pii/S1366554526003091?via%3Dihub" target="_blank" rel="noopener">Robust planning for bus fleet electrification and charging facility deployment.</a> <i>Transportation Research Part E: Logistics and Transportation Review</i>, 213, 104970.</li>
+        <li>Zhang, Z., <b>Gao, Y.,</b> Zhang, F., Liu, W. (2026). <a href="https://www.sciencedirect.com/science/article/pii/S2949899625000346?via%3Dihub" target="_blank" rel="noopener">Parking management and operation: A bibliometric analysis and comprehensive review.</a> <i>Transport Economics and Management</i>, 4, 14-37.</li>
+        <li>Xu, J., Deng, L., <b>Gao, Y.,</b> Liu, W. (2026). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0968090X25004966" target="_blank" rel="noopener">Joint optimization of pricing, seat allocation and overbooking for high-speed railway system under demand uncertainty.</a> <i>Transportation Research Part C: Emerging Technologies</i>, 183, 105492.</li>
+        <li><b>Gao, Y.,</b> Liu, W., Zhang, Z., Du, B. (2025). <a href="https://www.sciencedirect.com/science/article/pii/S0965856425003118" target="_blank" rel="noopener">Managing parking and charging services for electric autonomous vehicles considering vehicle-to-grid facilities.</a> <i>Transportation Research Part A: Policy and Practice</i>, 201, 104680.</li>
+        <li>Liu, W., Wu, R., Xu, G., <b>Gao, Y.</b> (2025). <a href="https://www.sciencedirect.com/science/chapter/referencework/abs/pii/B9780443289934002158?via%3Dihub" target="_blank" rel="noopener">A double time-scale passenger assignment model.</a> <i>Encyclopedia in Operations Management</i>, 2, 224-237.</li>
+        <li>Xu, G., Zhou, P., Liu, W., <b>Gao, Y.</b> (2025). <a href="https://www.tandfonline.com/doi/full/10.1080/21680566.2024.2448707" target="_blank" rel="noopener">Seat allocation optimization for railway systems with equity considerations.</a> <i>Transportmetrica B: Transport Dynamics</i>, 2448707.</li>
+        <li>Xu, G., Liu, Y., <b>Gao, Y.,</b> Liu, W. (2023). <a href="https://www.sciencedirect.com/science/article/pii/S1366554523002193" target="_blank" rel="noopener">Integrated optimization of train stopping plan and seat allocation scheme for railway systems under equilibrium travel choice and elastic demand.</a> <i>Transportation Research Part E: Logistics and Transportation Review</i>, 177, 103231.</li>
+        <li>Xu, G., <b>Gao, Y.,</b> Liu, W. (2023). <a href="https://www.sciencedirect.com/science/article/pii/S0968090X23002504" target="_blank" rel="noopener">Pareto-improving seat allocation for high-speed railway networks with equilibrium flows.</a> <i>Transportation Research Part C: Emerging Technologies</i>, 154, 104261.</li>
+        <li><b>Gao, Y.,</b> Yang, W., Xu, G. (2022). <a href="https://chn.oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=CSTD202203007&uniplatform=OVERSEA&v=X1L_S5G8AlY9FPweDEEOhLYpvsSjQAO8ngny5Fw2WY5rLXdXGZgicAyfFpGni1wL" target="_blank" rel="noopener">An Optimization Method for Railway of Multi-train Seat allocation Problem with Cancellation and Refund Policy.</a> <i>Journal of Railway Science and Engineering</i>, 19(03):634-641.</li>
+      </ol>
+    </section>
+
+    <!-- Conference Proceedings -->
+    <section id="conference-proceedings" class="card-section">
+      <h2>Conference Proceedings</h2>
+      <ol class="conf-list">
+        <li><b>Gao, Y.,</b> Liu, W. <a href="https://tristan2025.org/proceedings/TRISTAN2025_ExtendedAbstract_130.pdf" target="_blank" rel="noopener">Robust planning of bus fleet electrification and charging facility deployment.</a> In the 12th Triennial Symposium on Transportation Analysis conference (TRISTAN XII). June 22-27, 2025, Okinawa, Japan.</li>
+        <li><b>Gao, Y.,</b> Liu, W., Zhang, Z. Joint optimization of vehicle-to-grid facilities and parking and charging services in the era of electric autonomous vehicles. Proceedings of the 27th International Conference of Hong Kong Society for Transportation Studies, HKSTS 2023: Transport and Equity, 551–558.</li>
+        <li>Xu, G., Liu, Y., <b>Gao, Y.,</b> Liu, W. Integrated optimization of train stop planning and seat allocation for railway systems under equilibrium travel choice and elastic demand. In 4th International Symposium on Multimodal Transportation. Nanjing, China, 2021.</li>
+      </ol>
+    </section>
+
+    <!-- Projects/Awards -->
+    <section id="projects" class="card-section">
+      <h2>Projects & Awards</h2>
+      <ul class="list-icon">
+        <li>电动车出行、停车、充电以及反向输电的综合规划与管理, 广东省自然科学基金面上项目, 2023-2025, 参与.</li>
+        <li>面向时变需求的高速铁路网络票额分配和差异化定价综合优化, 国家自然科学基金面上项目, 72171236, 2022.01-2025.12, 参与.</li>
+        <li>基于弹性时变需求的高速铁路网络票额优化方法, 中南大学研究生科研创新项目, 1053320192457, 2020.09-2022.03, 负责.</li>
+        <li>Arup Research Competition 2025, Commendation Award, 2025.</li>
+        <li>第十七届“华为杯”中国研究生数学建模竞赛二等奖, 2020.12.</li>
+      </ul>
+    </section>
+
+    <!-- Related Links -->
+    <section id="related-links" class="card-section">
+      <h2>Related Links</h2>
+      <div class="link-row">
+        <a href="https://orcid.org/0000-0001-6197-5416" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=qAM6vgQAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=58513855500" target="_blank" rel="noopener">Scopus</a>
+        <a href="https://www.researchgate.net/profile/Yihan-Gao-9/research" target="_blank" rel="noopener">ResearchGate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last updated: November 2026 · Yihan Gao</p>
+    <p style="margin-top: 0.3rem; font-size: 0.75rem;">The Hong Kong Polytechnic University</p>
+  </footer>
+</div>
+</body>
+</html>
