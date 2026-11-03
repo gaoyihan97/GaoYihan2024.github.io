@@ -145,7 +145,9 @@ def build_pdf(data, lang):
         pair(f'<b>{esc(tr(item["institution"], lang))}</b><br/>{esc(tr(item["degree"], lang))}', f'{esc(tr(item["location"], lang))}<br/>{esc(tr(item["dates"], lang))}', esc(tr(item["detail"], lang)))
 
     section("research")
-    story.append(p("; ".join(esc(x) for x in data["research"]["topics"][lang])))
+    story.append(p(("Research topics: " if lang == "en" else "研究领域：") + "; ".join(esc(x) for x in data["research"]["topics"][lang])))
+    if data["research"].get("methods", {}).get(lang):
+        story.append(p(("Research methods: " if lang == "en" else "研究方法：") + "; ".join(esc(x) for x in data["research"]["methods"][lang])))
 
     section("experience")
     for item in data["experience"]:
@@ -220,7 +222,10 @@ def build_html(data, lang):
     def entry(left, right="", detail=""):
         return f'<div class="entry"><div class="entry-head"><div>{left}</div><div class="date">{right}</div></div>{f"<p class=detail>{detail}</p>" if detail else ""}</div>'
     section("education", "".join(entry(f'<b>{esc(tr(x["institution"], lang))}</b><br>{esc(tr(x["degree"], lang))}', esc(tr(x["dates"], lang)), esc(tr(x["detail"], lang))) for x in data["education"]))
-    section("research", "<p>" + "; ".join(esc(x) for x in data["research"]["topics"][lang]) + "</p>")
+    research_html = "<p>" + ("Research topics: " if lang == "en" else "研究领域：") + "; ".join(esc(x) for x in data["research"]["topics"][lang]) + "</p>"
+    if data["research"].get("methods", {}).get(lang):
+        research_html += "<p>" + ("Research methods: " if lang == "en" else "研究方法：") + "; ".join(esc(x) for x in data["research"]["methods"][lang]) + "</p>"
+    section("research", research_html)
     section("experience", "".join(entry(f'<b>{esc(tr(x["institution"], lang))}</b><br>{esc(tr(x["role"], lang))}', esc(tr(x["dates"], lang)), esc(tr(x["detail"], lang))) for x in data["experience"]))
     for key, field in [("working", "working_papers"), ("journals", "journal_publications"), ("chapters", "chapters")]:
         # ReportLab's optional color attribute has no effect on browser semantics.
