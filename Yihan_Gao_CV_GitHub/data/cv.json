@@ -40,7 +40,7 @@
       },
       "detail": {
         "en": "Department of Aeronautical and Aviation Engineering; Supervisor: Prof. Wei Liu",
-        "zh": "航空及民航工程学系；导师：刘伟教授"
+        "zh": "航空及民航工程学系；导师：刘威教授"
       }
     },
     {
@@ -134,9 +134,9 @@
         "Railway Systems"
       ],
       "zh": [
-        "交通电动化",
-        "交通动力学",
-        "铁路系统"
+        "电动化交通系统",
+        "交通动态优化",
+        "铁路运营管理"
       ]
     }
   },
@@ -409,7 +409,7 @@
     {
       "title": {
         "en": "Commendation Award, Arup Research Competition",
-        "zh": "Arup Research Competition 嘉许奖"
+        "zh": "Arup Research Competition 表彰奖"
       },
       "year": "2025"
     },
