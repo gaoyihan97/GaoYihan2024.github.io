@@ -138,6 +138,18 @@
         "交通动态优化",
         "铁路运营管理"
       ]
+    },
+    "methods": {
+      "en": [
+        "Equilibrium Analysis",
+        "Optimization Algorithm Design",
+        "Analytical Modeling"
+      ],
+      "zh": [
+        "均衡分析",
+        "优化算法设计",
+        "解析建模"
+      ]
     }
   },
   "journal_publications": [
