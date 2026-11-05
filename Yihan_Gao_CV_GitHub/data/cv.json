@@ -8,7 +8,7 @@
     "en": "Ph.D. Candidate in Transportation",
     "zh": "交通运输方向博士研究生"
   },
-  "department": {
+ "department": {
     "en": "Department of Aeronautical and Aviation Engineering",
     "zh": "航空及民航工程学系"
   },
@@ -19,6 +19,7 @@
   "email": "yi-han.gao@connect.polyu.hk",
   "homepage": "https://gaoyihan97.github.io/GaoYihan2024.github.io/",
   "scholar": "https://scholar.google.com/citations?user=qAM6vgQAAAAJ",
+  "scopus": "https://www.scopus.com/authid/detail.uri?authorId=58513855500",
   "orcid": "https://orcid.org/0000-0001-6197-5416",
   "education": [
     {
@@ -264,7 +265,7 @@
         "zh": "航空运输运营中的运筹学与计算分析"
       },
       "dates": {
-        "en": "2023, Semester 1; 2025 and 2026，Semester 1 (tutorials)",
+        "en": "2023, Semester 1; 2025 and 2026, Semester 1 (tutorials)",
         "zh": "2024 年第一学期；2025、2026 年第一学期（习题课）"
       },
       "role": {
