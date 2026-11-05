@@ -8,7 +8,7 @@
     "en": "Ph.D. Candidate in Transportation",
     "zh": "交通运输方向博士研究生"
   },
- "department": {
+  "department": {
     "en": "Department of Aeronautical and Aviation Engineering",
     "zh": "航空及民航工程学系"
   },
@@ -320,20 +320,20 @@
   ],
   "presentations": [
     {
-  "title": "Dynamic sharing strategies for bus charging systems with public access",
-  "event": {
-    "en": "The 17th International Workshop on Computational Transportation Science (CTS 2026)",
-    "zh": "第十七届计算交通科学国际研讨会（CTS 2026）"
-  },
-  "dates": {
-    "en": "Aug 7-9, 2026",
-    "zh": "2026.08.07-09"
-  },
-  "location": {
-    "en": "Changsha, China",
-    "zh": "中国长沙"
-  }
-},
+      "title": "Dynamic sharing strategies for bus charging systems with public access",
+      "event": {
+        "en": "The 17th International Workshop on Computational Transportation Science (CTS 2026)",
+        "zh": "第十七届计算交通科学国际研讨会（CTS 2026）"
+      },
+      "dates": {
+        "en": "Aug 7-9, 2026",
+        "zh": "2026.08.07-09"
+      },
+      "location": {
+        "en": "Changsha, China",
+        "zh": "中国长沙"
+      }
+    },
     {
       "title": "Robust planning of bus fleet electrification and charging facility deployment",
       "event": {
@@ -473,5 +473,6 @@
       },
       "year": "2020"
     }
-  ]
+  ],
+  "email": "yi-han.gao@connect.polyu.hk"
 }
