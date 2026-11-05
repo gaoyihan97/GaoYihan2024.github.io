@@ -133,9 +133,9 @@ def build_pdf(data, lang):
             story.append(KeepTogether([p(f"[{i}] " + pub_markup(item, lang), para)]))
 
     story.append(p(esc(tr(data["name"], lang)), title))
-    story.append(p(esc(tr(data["department"], lang)), center))
-    story.append(p(esc(tr(data["institution"], lang)) + (" | Hong Kong, China" if lang == "en" else "｜中国香港"), center))
-    links = [("Email" if lang == "en" else "邮箱", "mailto:" + data["email"]), ("Homepage" if lang == "en" else "个人主页", data["homepage"]), ("Google Scholar", data["scholar"]), ("ORCID", data["orcid"])]
+    affiliation = esc(tr(data["department"], lang)) + ", " + esc(tr(data["institution"], lang))
+    story.append(p(affiliation, ParagraphStyle("affiliation", parent=center, fontSize=8.8)))
+    links = [("Email" if lang == "en" else "邮箱", "mailto:" + data["email"]), ("Homepage" if lang == "en" else "个人主页", data["homepage"]), ("Google Scholar", data["scholar"]), ("ORCID", data["orcid"]), ("Scopus", data["scopus"])]
     story.append(p(" &nbsp; | &nbsp; ".join(f'<a href="{esc(url)}" color="{BLUE}">{esc(text)}</a>' for text, url in links), center))
     story.append(p(esc(data["email"]), center))
     story.append(Spacer(1, 4))
@@ -206,6 +206,7 @@ CSS = """
 *{box-sizing:border-box}body{margin:0;background:#f4f5f6;color:var(--ink);font:17px/1.58 Georgia,'Noto Serif SC','Songti SC',serif}
 .sheet{max-width:960px;margin:35px auto;background:white;padding:50px 65px;box-shadow:0 4px 24px #00000009}
 header{text-align:center}h1{font-size:42px;line-height:1.2;margin:0 0 12px}header p{margin:3px 0}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.affiliation{font-size:14px;white-space:nowrap}@media(max-width:700px){.affiliation{white-space:normal}}
 .links{display:flex;justify-content:center;gap:10px 20px;flex-wrap:wrap;font-size:15px}.toolbar{max-width:960px;margin:25px auto 0;display:flex;gap:12px;justify-content:flex-end;padding:0 15px;font:14px/1.6 system-ui,sans-serif}
 .toolbar a{border:1px solid #cbd3db;padding:5px 14px;background:white;border-radius:4px}h2{color:var(--blue);font-size:19px;line-height:1.3;border-bottom:1px solid var(--line);margin:26px 0 10px;text-transform:uppercase;letter-spacing:.04em}
 .entry{margin:0 0 12px;break-inside:avoid}.entry-head{display:flex;justify-content:space-between;gap:20px}.date{color:var(--muted);text-align:right;font-size:15px;flex-shrink:0}.detail{margin:1px 0}.research{display:grid;grid-template-columns:1fr 1fr;gap:30px}.research ol{padding-left:24px;margin:6px 0}.pubs{list-style:none;counter-reset:pub;padding-left:30px;margin:0}.pubs li{counter-increment:pub;margin-bottom:12px;position:relative;break-inside:avoid}.pubs li:before{content:'[' counter(pub) ']';position:absolute;left:-30px;color:var(--blue)}
@@ -237,7 +238,7 @@ def build_html(data, lang):
     nav = [('index.html', 'English'), ('zh.html', '中文'), (f'Yihan_Gao_CV_{lang.upper()}.pdf', 'Download PDF' if lang == 'en' else '下载 PDF'), ('../index.html', 'Homepage' if lang == 'en' else '返回主页')]
     text = f'''<!doctype html>
 <html lang="{'en' if lang == 'en' else 'zh-CN'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{esc(tr(data['name'], lang))} academic curriculum vitae"><title>{esc(tr(data['name'], lang))} | Curriculum Vitae</title><style>{CSS}</style></head>
-<body class="{lang}"><nav class="toolbar" aria-label="CV navigation">{''.join(f'<a href="{href}">{name}</a>' for href, name in nav)}</nav><main class="sheet"><header><h1>{esc(tr(data['name'], lang))}</h1><p>{esc(tr(data['department'], lang))}</p><p>{esc(tr(data['institution'], lang))}</p><p><a href="mailto:{esc(data['email'])}">{esc(data['email'])}</a></p><div class="links"><a href="{esc(data['homepage'])}">{'Homepage' if lang == 'en' else '个人主页'}</a><a href="{esc(data['scholar'])}">Google Scholar</a><a href="{esc(data['orcid'])}">ORCID</a></div></header>{''.join(parts)}<footer>{'Last updated' if lang == 'en' else '更新日期'}: {esc(data['updated'])}</footer></main></body></html>'''
+<body class="{lang}"><nav class="toolbar" aria-label="CV navigation">{''.join(f'<a href="{href}">{name}</a>' for href, name in nav)}</nav><main class="sheet"><header><h1>{esc(tr(data['name'], lang))}</h1><p class=affiliation>{esc(tr(data['department'], lang))}, {esc(tr(data['institution'], lang))}</p><p><a href="mailto:{esc(data['email'])}">{esc(data['email'])}</a></p><div class="links"><a href="{esc(data['homepage'])}">{'Homepage' if lang == 'en' else '个人主页'}</a><a href="{esc(data['scholar'])}">Google Scholar</a><a href="{esc(data['orcid'])}">ORCID</a><a href="{esc(data['scopus'])}">Scopus</a></div></header>{''.join(parts)}<footer>{'Last updated' if lang == 'en' else '更新日期'}: {esc(data['updated'])}</footer></main></body></html>'''
     target = ROOT / "cv" / ("index.html" if lang == "en" else "zh.html")
     target.write_text(text, encoding="utf-8")
     print("Built", target.relative_to(ROOT))
