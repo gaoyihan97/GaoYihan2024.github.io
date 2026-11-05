@@ -131,7 +131,7 @@
       "en": [
         "Electrified and automated transportation",
         "Transport dynamics",
-        "Railway operation management"
+        "Railway management"
       ],
       "zh": [
         "电动化和自动驾驶交通系统",
@@ -319,6 +319,21 @@
     }
   ],
   "presentations": [
+    {
+  "title": "Dynamic sharing strategies for bus charging systems with public access",
+  "event": {
+    "en": "The 17th International Workshop on Computational Transportation Science (CTS 2026)",
+    "zh": "第十七届计算交通科学国际研讨会（CTS 2026）"
+  },
+  "dates": {
+    "en": "Aug 7-9, 2026",
+    "zh": "2026.08.07-09"
+  },
+  "location": {
+    "en": "Changsha, China",
+    "zh": "中国长沙"
+  }
+},
     {
       "title": "Robust planning of bus fleet electrification and charging facility deployment",
       "event": {
