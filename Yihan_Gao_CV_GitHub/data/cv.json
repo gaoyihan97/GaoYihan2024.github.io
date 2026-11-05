@@ -130,9 +130,9 @@
   "research": {
     "topics": {
       "en": [
-        "Electrified and automated transportation",
-        "Transport dynamics",
-        "Railway management"
+        "Electrified and Automated Transportation",
+        "Transport Dynamics",
+        "Railway Management"
       ],
       "zh": [
         "电动化和自动驾驶交通系统",
@@ -142,9 +142,9 @@
     },
     "methods": {
       "en": [
-        "Equilibrium analysis",
-        "Optimization algorithm design",
-        "Analytical modeling"
+        "Equilibrium Analysis",
+        "Optimization Algorithm Design",
+        "Analytical Modeling"
       ],
       "zh": [
         "均衡分析",
