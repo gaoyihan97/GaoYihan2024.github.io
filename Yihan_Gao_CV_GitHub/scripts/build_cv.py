@@ -135,7 +135,7 @@ def build_pdf(data, lang):
     story.append(p(esc(tr(data["name"], lang)), title))
     affiliation = esc(tr(data["department"], lang)) + ", " + esc(tr(data["institution"], lang))
     story.append(p(affiliation, ParagraphStyle("affiliation", parent=center, fontSize=8.8)))
-    links = [("Email" if lang == "en" else "邮箱", "mailto:" + data["email"]), ("Homepage" if lang == "en" else "个人主页", data["homepage"]), ("Google Scholar", data["scholar"]), ("ORCID", data["orcid"]), ("Scopus", data["scopus"])]
+    links = [("Homepage" if lang == "en" else "个人主页", data["homepage"]), ("Google Scholar", data["scholar"]), ("ORCID", data["orcid"]), ("Scopus", data["scopus"])]
     story.append(p(" &nbsp; | &nbsp; ".join(f'<a href="{esc(url)}" color="{BLUE}">{esc(text)}</a>' for text, url in links), center))
     story.append(p(esc(data["email"]), center))
     story.append(Spacer(1, 4))
