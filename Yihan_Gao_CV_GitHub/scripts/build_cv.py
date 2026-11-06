@@ -81,8 +81,6 @@ def pub_markup(item, lang):
     bits = [f'{authors(a)} ({esc(item["year"])}). {linked}.']
     if venue:
         bits.append(f"<i>{esc(venue)}</i>" + (", " + esc(item["details"]) if item.get("details") else "") + ".")
-    if item.get("language") == "Chinese" and lang == "en":
-        bits.append("(In Chinese.)")
     if item.get("status"):
         bits.append(f'<i>{esc(tr(item["status"], lang))}.</i>')
     return " ".join(bits)
