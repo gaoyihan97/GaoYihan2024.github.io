@@ -34,6 +34,8 @@ def esc(value):
 
 
 def authors(value):
+    if re.fullmatch(r"[^,]+, [A-Z]\., and [^,]+, [A-Z]\.", value):
+        value = value.replace(", and ", ", ")
     return esc(value).replace("Gao, Y.", "<b>Gao, Y.</b>").replace("高一涵", "<b>高一涵</b>")
 
 
@@ -181,7 +183,13 @@ def build_pdf(data, lang):
 
     section("awards")
     for item in data["awards"]:
-        pair(esc(tr(item["title"], lang)), esc(item["year"]))
+        award_text = tr(item["title"], lang)
+        award_width = WIDTH - 38
+        award_size = min(size, award_width / max(1, pdfmetrics.stringWidth(award_text, family, size)) * size)
+        award_style = ParagraphStyle("award", parent=body, fontSize=award_size)
+        award_table = Table([[p(esc(award_text), award_style), p(esc(item["year"]), right)]], colWidths=[award_width, 38])
+        award_table.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0)]))
+        story.append(award_table)
 
     output = ROOT / "cv" / f"Yihan_Gao_CV_{lang.upper()}.pdf"
     doc = SimpleDocTemplate(str(output), pagesize=A4, rightMargin=44, leftMargin=44, topMargin=39, bottomMargin=39, title=f'{tr(data["name"], lang)} - Curriculum Vitae', author="Yihan Gao", allowSplitting=1)
